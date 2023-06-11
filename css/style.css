@@ -1,0 +1,328 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: #222223;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: #222223;
+}
+
+h3{
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+input, button{
+  color: #222223;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  padding: 8px 10px;
+  border: none;
+  width: 100%;
+  transition: 0.2s;
+}
+
+input:-webkit-autofill {
+  background-color: #f5f5f5;
+}
+
+button{
+  height: 40px;
+}
+
+.bold{
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.tosca{
+  color: #579BB1;
+}
+
+.beige1{
+  color: #e1d7c6;
+}
+
+.beige2{
+  color: #ece8dd;
+}
+
+.beige3{
+  color: #f8f4ea;
+}
+
+.beige4{
+  color: #d2c0a1;
+}
+
+.white{
+  color: white;
+}
+
+.tosca-bg{
+  background-color: #579BB1;
+}
+
+.no-bg{
+  background-color: transparent;
+}
+
+.beige1-bg{
+  background-color: #e1d7c6;
+}
+
+.beige2-bg{
+  background-color: #ece8dd;
+}
+
+.beige3-bg{
+  background-color: #f8f4ea;
+}
+
+.grey-bg{
+  background-color: #f5f5f5;
+}
+
+.white-bg{
+  background-color: white;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.quarter-width{
+  width: 75%;
+}
+
+.half-width{
+  width: 50%;
+}
+
+.full-height{
+  height: 100%;
+}
+
+.margin-top-bottom-6{
+  margin: 8px 0px 8px 8px;
+}
+
+.margin-bottom-20{
+  margin-bottom: 20px;
+}
+
+.padding-40{
+  padding: 40px;
+}
+
+.padding-4{
+  padding: 4px;
+}
+
+.padding-top-65{
+  padding-top: 65px;
+}
+
+.padding-bottom-30{
+  padding-bottom: 30px;
+}
+
+.radius{
+  border-radius: 20px;
+}
+
+.radius10{
+  border-radius: 10px;
+}
+
+.radius5{
+  border-radius: 5px;
+}
+
+.text-shadow{
+  text-shadow: 5px 1px 45px #bcaf99;
+}
+
+.shadow{
+  box-shadow: 1px 1px 45px rgba(0, 0, 0, 0.1);
+}
+
+.no-border{
+  border: none;
+}
+
+.sign-ill{
+  width: 400px;
+}
+
+.sign-logo{
+  width: 80px;
+  position: absolute;
+  margin-top: -35px;
+}
+
+.sign-icon{
+  width: 15px;
+}
+
+.box-fields div:hover{
+  background-color: white;
+}
+
+.text-input:focus {
+  background-color: #f5f5f5;
+  outline: none;
+}
+
+.checkbox{
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* fieldset {
+    flex-direction: column;
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  .group-fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .grup1,
+  .grup2 {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+  }
+  
+  .text-label,
+  .click-button,
+  .click-button2 {
+    font-weight: 500;
+  }
+  
+  .text-input,
+  .click-button,
+  .click-button2 {
+    height: 40px;
+    background-color: #f4f5f5;
+    font-family: "Poppins", sans-serif;
+    border-radius: 15px;
+    border: 0;
+    margin-top: 5px;
+  }
+  
+  .text-input {
+    padding: 0 15px;
+    transition: 0.2s;
+  }
+  
+  .text-input:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px #4281ce;
+    border: 1px solid #24599a;
+  }
+  
+  .text-input:focus {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px #4281ce;
+    outline: none;
+    border: 1px solid #0f3460;
+  }
+  
+  a.forgot-pass {
+    text-align: right;
+    color: #e94560;
+    float: right;
+    font-weight: 500;
+  }
+  
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    color: #555555;
+    transition: 0.2s;
+  }
+  
+  .checkbox:hover {
+    color: #161625;
+  }
+  
+  .terms-input {
+    margin-right: 15px;
+  }
+  
+  .click-button,
+  .click-button2 {
+    background-color: #e94560;
+    padding: 0 30px;
+    font-weight: 500;
+    color: #fff;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  .click-button:hover,
+  .click-button2:hover {
+    background-color: #e94560;
+    box-shadow: 0 0 0 3px #e94560;
+  }
+  
+  a.auth-link,
+  a.privacy {
+    color: #e94560;
+    font-weight: 500;
+  }
+  
+  .pass-instructions p {
+    text-align: justify;
+    font-size: 14px;
+  }
+  
+  .pass-instructions {
+    margin-bottom: 30px;
+  } */
