@@ -22,37 +22,43 @@
                 <form action="signin.html" method="POST">
                     <div class="display-flex margin-bottom-15">
                         <div class="form-field grey-bg half-width radius display-flex">
-                            <div class="white-bg display-flex align-center margin-top-bottom-6 padding-4 radius5">
-                                <img src="icon/user.png" alt="" class="sign-icon">
+                            <div class="div-icon white-bg display-flex align-center">
+                                <img src="icon/user.png" alt="" class="width-15">
                             </div>
-                            <input type="text" name="nama" id="nama" tabindex="1" class="text-input no-bg" placeholder="Name" required autofocus>
+                            <input type="text" name="nama" id="nama" tabindex="1" class="no-bg" placeholder="Name" required autofocus>
                         </div>
-                        <div class="sign-icon"></div>
+                        <div class="width-15"></div>
                         <div class="form-field grey-bg half-width radius display-flex">
-                            <input type="text" name="username" id="username" tabindex="2" class="text-input no-bg" placeholder="Username" required autocapitalize="off">
+                            <input type="text" name="username" id="username" tabindex="2" class="no-bg" placeholder="Username" required autocapitalize="off">
                         </div>
                     </div>
                     <div class="form-field grey-bg margin-bottom-15 radius display-flex">
-                        <div class=" white-bg display-flex align-center margin-top-bottom-6 padding-4 radius5">
-                            <img src="icon/mail.png" alt="" class="sign-icon">
+                        <div class="div-icon white-bg display-flex align-center">
+                            <img src="icon/mail.png" alt="" class="width-15">
                         </div>
-                        <input type="email" name="email" id="email" class="text-input no-bg" required tabindex="3" placeholder="Email Address" autocapitalize="off">
+                        <input type="email" name="email" id="email" class="no-bg" required tabindex="3" placeholder="Email Address" autocapitalize="off">
                     </div>
                     <div class="form-field grey-bg margin-bottom-15 radius display-flex">
-                        <div class=" white-bg display-flex align-center margin-top-bottom-6 padding-4 radius5">
-                            <img src="icon/pass.png" alt="" class="sign-icon">
+                        <div class="div-icon white-bg display-flex align-center">
+                            <img src="icon/pass.png" alt="" class="width-15">
                         </div>
-                        <input type="password" name="password" id="password" class="text-input no-bg" required tabindex="4" placeholder="Password 8+ characters">
+                        <input type="password" name="password" id="password" class="no-bg" required tabindex="4" placeholder="Password 8+ characters">
+                        <div class="div-icon2 white-bg display-flex align-center pointer">
+                            <img src="icon/view.png" alt="" class="width-15">
+                        </div>
+                        <!-- <div class="div-icon2 white-bg display-flex align-center pointer">
+                            <img src="icon/hide.png" alt="" class="width-15">
+                        </div> -->
                     </div>
                     <div class="margin-bottom-15 display-flex">
                         <input type="checkbox" name="terms" id="terms" class="pointer checkbox" required tabindex="5">
                         <label for="terms" class="pointer text-justify">
-                            Creating an account means you’re okay with our <a href="#" class="beige4 bold">Terms of Service</a>, <a href="#" class="beige4 bold">Privacy Policy</a>, and our default <a href="#" class="beige4 bold">Notification Settings</a>.
+                            Creating an account means you’re okay with our <a href="#" class="beige bold">Terms of Service</a>, <a href="#" class="beige bold">Privacy Policy</a>, and our default <a href="#" class="beige bold">Notification Settings</a>.
                         </label>
                     </div>
                     <button class="full-width margin-bottom-15 radius tosca-bg white bold pointer" type="submit" tabindex="6">Create Account</button>
                 </form>
-                <p>Already a member? <a href="signin.html" class="beige4 bold">Sign in</a></p>
+                <p>Already a member? <a href="signin.html" class="beige bold">Sign in</a></p>
             </div>
         </section>
     </container>

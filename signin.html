@@ -5,44 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planify | Sign In</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="beige3-bg display-flex align-center">
-    <div class="main-container display-flex align-center full-width">
-        <div class="signin-container-illustration text-center half-width">
+    <container class="display-flex align-center full-width full-height">
+        <section class="text-center half-width">
             <img src="img/sign-ill.png" alt="" class="sign-ill">
-        </div>
-        <div class="signin-container-form text-center half-width">
-            <img src="img/logo1.png" alt="" class="sign-logo">
-            <div class="form-box white-bg full-width">
-                <h3>Sign in to Planify</h3>
-                <form action="home.html" method="POST">
-                    <div class="box-fields">
-                        <fieldset>
-                            <img src="icon/username.png" alt="" class="sign-icon">
-                            <input type="text" name="user_email" id="username-email" class="text-input" tabindex="1" autocapitalize="off" placeholder="Username or Email Address" required>
-                        </fieldset>
-                        <fieldset>
-                            <img src="icon/password.png" alt="" class="sign-icon">
-                            <input type="password" name="password" id="password" class="text-input" tabindex="2" required>
-                            <img src="icon/eye.png" alt="" class="sign-icon">
-                        </fieldset>
-                        <a href="resetPass.html" class="forgot-pass text-right">Forgot password?</a>
-                        <fieldset class="">
-                            <input type="checkbox" name="terms" id="terms" class="terms-input" required tabindex="5">
-                            <label for="terms" class="text-terms">
-                                I agree and accept <a href="#" class="sign-link">Terms of Service</a>, <a href="#" class="sign-link">Privacy Policy</a>, and default <a href="#" class="sign-link">Notification Settings</a>.
-                            </label>
-                        </fieldset>
+        </section>
+        <section class="half-width">
+            <div class="box-form white-bg quarter-width text-center">
+                <img src="img/logo1.png" alt="" class="sign-logo">
+                <h3 class="margin-bottom-15">Sign in to Planify</h3>
+                <form action="signin.html" method="POST">
+                    <div class="form-field grey-bg margin-bottom-15 radius display-flex">
+                        <div class="div-icon white-bg display-flex align-center">
+                            <img src="icon/user.png" alt="" class="width-15">
+                        </div>
+                        <input type="text" name="user_email" id="username-email" class="no-bg" tabindex="1" autocapitalize="off" placeholder="Username or Email Address" required autofocus>
                     </div>
-                    <input id="fields-button" class="click-button" type="submit" value="Sign In" tabindex="3">
+                    <div class="form-field grey-bg margin-bottom-15 radius display-flex">
+                        <div class="div-icon white-bg display-flex align-center">
+                            <img src="icon/pass.png" alt="" class="width-15">
+                        </div>
+                        <input type="password" name="password" id="password" class="no-bg" required tabindex="2" placeholder="Password 8+ characters">
+                        <div class="div-icon2 white-bg display-flex align-center pointer">
+                            <img src="icon/view.png" alt="" class="width-15">
+                        </div>
+                        <!-- <div class="div-icon2 white-bg display-flex align-center pointer">
+                            <img src="icon/hide.png" alt="" class="width-15">
+                        </div> -->
+                    </div>
+                    <div class="margin-bottom-15 display-flex">
+                        <input type="checkbox" name="terms" id="terms" class="pointer checkbox" required tabindex="3">
+                        <label for="terms" class="pointer text-justify">
+                            I agree and accept <a href="#" class="beige bold">Terms of Service</a>, <a href="#" class="beige bold">Privacy Policy</a>, and default <a href="#" class="beige bold">Notification Settings</a>.
+                        </label>
+                    </div>
+                    <button class="full-width margin-bottom-15 radius tosca-bg white bold pointer" type="submit" tabindex="4">Sign In</button>
                 </form>
-                <p>Not a member? <a href="signup.html" class="sign-link">Sign up now</a></p>
+                <p>Not a member? <a href="signup.html" class="beige bold">Sign up now</a></p>
             </div>
-        </div>
-    </div>
+        </section>
+    </container>
 </body>
 </html>
