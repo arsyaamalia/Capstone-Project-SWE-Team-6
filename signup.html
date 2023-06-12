@@ -11,54 +11,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="beige3-bg display-flex align-center">
-    <div class="main-container display-flex align-center full-width padding-bottom-30">
-        <div class="signin-container-illustration text-center half-width">
+    <container class="display-flex align-center full-width full-height">
+        <section class="text-center half-width">
             <img src="img/sign-ill.png" alt="" class="sign-ill">
-        </div>
-        <div class="signin-container-form half-width display-flex flex-column padding-top-65">
-            <div class="quarter-width display-flex justify-center">
+        </section>
+        <section class="half-width">
+            <div class="box-form white-bg quarter-width text-center">
                 <img src="img/logo1.png" alt="" class="sign-logo">
-                <div class="form-box white-bg radius shadow padding-40 text-center">
-                    <h3 class="margin-bottom-20">Sign up to Planify</h3>
-                    <form action="signin.html" method="POST">
-                        <div class="box-fields">
-                            <div class="group-fieldset display-flex margin-bottom-20">
-                                <div class="grup1 no-border grey-bg half-width radius10 display-flex">
-                                    <div class="fieldset-icon white-bg display-flex align-center margin-top-bottom-6 padding-4 radius5">
-                                        <img src="icon/user.png" alt="" class="sign-icon">
-                                    </div>
-                                    <input type="text" name="nama" id="nama" tabindex="1" class="text-input no-bg" placeholder="Name" required autofocus>
-                                </div>
-                                <div style="width: 15px;"></div>
-                                <div class="grup2 no-border grey-bg half-width radius10 display-flex">
-                                    <input type="text" name="username" id="username" tabindex="2" class="text-input no-bg" placeholder="Username" required autocapitalize="off">
-                                </div>
+                <h3 class="margin-bottom-15">Sign up to Planify</h3>
+                <form action="signin.html" method="POST">
+                    <div class="display-flex margin-bottom-15">
+                        <div class="form-field grey-bg half-width radius display-flex">
+                            <div class="white-bg display-flex align-center margin-top-bottom-6 padding-4 radius5">
+                                <img src="icon/user.png" alt="" class="sign-icon">
                             </div>
-                            <div class="no-border grey-bg margin-bottom-20 radius10 display-flex">
-                                <div class="fieldset-icon white-bg display-flex align-center margin-top-bottom-6 padding-4 radius5">
-                                    <img src="icon/mail.png" alt="" class="sign-icon">
-                                </div>
-                                <input type="email" name="email" id="email" class="text-input no-bg" required tabindex="3" placeholder="Email Address" autocapitalize="off">
-                            </div>
-                            <div class="no-border grey-bg margin-bottom-20 radius10 display-flex">
-                                <div class="fieldset-icon white-bg display-flex align-center margin-top-bottom-6 padding-4 radius5">
-                                    <img src="icon/pass.png" alt="" class="sign-icon">
-                                </div>
-                                <input type="password" name="password" id="password" class="text-input no-bg" required tabindex="4" placeholder="Password 8+ characters">
-                            </div>
-                            <div class="no-border margin-bottom-20 display-flex">
-                                <input type="checkbox" name="terms" id="terms" class="terms-input checkbox" required tabindex="5">
-                                <label for="terms" class="text-terms text-justify">
-                                    Creating an account means you’re okay with our <a href="#" class="beige4 bold text-shadow">Terms of Service</a>, <a href="#" class="sign-link beige4 bold">Privacy Policy</a>, and our default <a href="#" class="sign-link beige4 bold">Notification Settings</a>.
-                                </label>
-                            </div>
+                            <input type="text" name="nama" id="nama" tabindex="1" class="text-input no-bg" placeholder="Name" required autofocus>
                         </div>
-                        <button id="fields-button" class="click-button full-width margin-bottom-20 radius10 tosca-bg white bold" type="submit" tabindex="6">Create Account</button>
-                    </form>
-                    <p>Already a member? <a href="signin.html" class="sign-link beige4 bold">Sign in</a></p>
-                </div>
+                        <div class="sign-icon"></div>
+                        <div class="form-field grey-bg half-width radius display-flex">
+                            <input type="text" name="username" id="username" tabindex="2" class="text-input no-bg" placeholder="Username" required autocapitalize="off">
+                        </div>
+                    </div>
+                    <div class="form-field grey-bg margin-bottom-15 radius display-flex">
+                        <div class=" white-bg display-flex align-center margin-top-bottom-6 padding-4 radius5">
+                            <img src="icon/mail.png" alt="" class="sign-icon">
+                        </div>
+                        <input type="email" name="email" id="email" class="text-input no-bg" required tabindex="3" placeholder="Email Address" autocapitalize="off">
+                    </div>
+                    <div class="form-field grey-bg margin-bottom-15 radius display-flex">
+                        <div class=" white-bg display-flex align-center margin-top-bottom-6 padding-4 radius5">
+                            <img src="icon/pass.png" alt="" class="sign-icon">
+                        </div>
+                        <input type="password" name="password" id="password" class="text-input no-bg" required tabindex="4" placeholder="Password 8+ characters">
+                    </div>
+                    <div class="margin-bottom-15 display-flex">
+                        <input type="checkbox" name="terms" id="terms" class="pointer checkbox" required tabindex="5">
+                        <label for="terms" class="pointer text-justify">
+                            Creating an account means you’re okay with our <a href="#" class="beige4 bold">Terms of Service</a>, <a href="#" class="beige4 bold">Privacy Policy</a>, and our default <a href="#" class="beige4 bold">Notification Settings</a>.
+                        </label>
+                    </div>
+                    <button class="full-width margin-bottom-15 radius tosca-bg white bold pointer" type="submit" tabindex="6">Create Account</button>
+                </form>
+                <p>Already a member? <a href="signin.html" class="beige4 bold">Sign in</a></p>
             </div>
-        </div>
-    </div>
+        </section>
+    </container>
 </body>
 </html>
