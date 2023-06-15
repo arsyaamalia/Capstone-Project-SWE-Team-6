@@ -11,7 +11,7 @@
     // atur timeout
     setTimeout(function() {
       // otw dashboard
-      window.location.href = 'dashboard.html';
+      window.location.href = 'index.html';
     }, 300); 
   }
 
@@ -27,7 +27,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     // Login DUMMY masbro
     if (username === 'Arsya110' && password === 'password') {
       // OTW ke dashboard
-      window.location.href = 'dashboard.html';
+      window.location.href = 'index.html';
     } else {
       showErrorMessage('Invalid username or password');
     }
