@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body class="beige3-bg display-flex align-center">
+<body class="beige3-bg display-flex align-center transition-page">
     <container class="container-sign display-grid gtc-2fr align-center">
         <section class="left text-center">
             <img src="img/sign-ill.png" alt="" class="quarter-width">
@@ -19,7 +19,7 @@
             <div class="box-form white-bg quarter-width text-center">
                 <a href="index.html"><img src="img/logo1.png" alt="" class="sign-logo"></a>
                 <h3 class="margin-bottom-15">Sign up to Planify</h3>
-                <form action="signin.html" method="POST">
+                <form id="register-form">
                     <div class="display-flex margin-bottom-15">
                         <div class="form-field grey-bg half-width radius display-flex">
                             <div class="div-icon white-bg display-flex align-center">
@@ -56,11 +56,13 @@
                             Creating an account means you’re okay with our <a href="#" class="beige bold">Terms of Service</a>, <a href="#" class="beige bold">Privacy Policy</a>, and our default <a href="#" class="beige bold">Notification Settings</a>.
                         </label>
                     </div>
-                    <button class="full-width margin-bottom-15 radius tosca-bg white bold pointer" type="submit" tabindex="6">Create Account</button>
+                    <button class="full-width margin-bottom-15 radius tosca-bg white bold pointer" type="submit" tabindex="6" id="register-btn">Create Account</button>
                 </form>
                 <p>Already a member? <a href="signin.html" class="beige bold">Sign in</a></p>
             </div>
         </section>
     </container>
+
+    <script src="js/signup.js"></script>
 </body>
 </html>
