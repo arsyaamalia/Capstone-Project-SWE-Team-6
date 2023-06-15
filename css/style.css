@@ -2,16 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #222223;
 }
 
 body{
-  color: #222223;
-  font-family: "Poppins", sans-serif;
   font-size: 13px;
+}
+
+body .container-sign{
   display: grid;
   place-items: center;
   min-height: 100vh;
-  padding: 30px
+  padding: 30px;
 }
 
 a{
@@ -26,11 +29,9 @@ h3{
 
 input, button{
   color: #222223;
-  font-family: "Poppins", sans-serif;
   font-size: 13px;
   padding: 8px 10px;
   border: none;
-  width: 100%;
   transition: 1s;
 }
 
@@ -123,6 +124,10 @@ button{
   cursor: pointer;
 }
 
+.display-inline{
+  display: inline;
+}
+
 .display-grid{
   display: grid;
 }
@@ -133,6 +138,10 @@ button{
 
 .gtc-2fr{
   grid-template-columns: 1fr 1fr;
+}
+
+.gtc-3fr{
+  grid-template-columns: 2fr 1fr;
 }
 
 .display-flex{
@@ -155,6 +164,10 @@ button{
   width: 100%;
 }
 
+.almost-full-width{
+  width: 90%;
+}
+
 .quarter-width{
   width: 75%;
 }
@@ -171,8 +184,24 @@ button{
   height: 100%;
 }
 
+.margin-10{
+  margin: 10px;
+}
+
+.margin-top-25{
+  margin-top: 25px;
+}
+
 .margin-bottom-15{
   margin-bottom: 15px;
+}
+
+.padding-50-175{
+  padding: 50px 175px;
+}
+
+.padding-50{
+  padding: 50px;
 }
 
 .box-form{
@@ -218,7 +247,7 @@ button{
 }
 
 @media (max-width: 860px) {
-  .container{
+  .container-sign{
     grid-template-columns: 1fr;
   }
 
@@ -228,5 +257,141 @@ button{
 
   .box-form{
     width: 100%;
+  }
+}
+
+/* CSS NAVBAR */
+
+nav.navbar{
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.width-130{
+  width: 130px;
+}
+
+.width-40{
+  width: 40px;
+}
+
+.margin-right-10{
+  margin-right: 10px;
+}
+
+.margin-right-20{
+  margin-right: 20px;
+}
+
+div.container-fluid{
+  padding: 12px 50px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS SECTION */
+
+section.home h1{
+  font-size: 70px;
+  font-weight: 600;
+}
+
+section.home h2{
+  font-size: 22px;
+}
+
+.gradient1{
+  background: linear-gradient(to bottom, white, #ece8dd);
+}
+
+.gradient2{
+  background: linear-gradient(to bottom, #ece8dd, white);
+}
+
+.margin-20{
+  margin: 20px 0;
+}
+
+.padding-15{
+  padding: 0 20px;
+}
+
+.height-30{
+  height: 30px;
+}
+
+div.distance{
+  display: none;
+}
+
+@media screen and (max-width:1120px) {
+  section.home h1{
+    font-size: 50px;
+  }
+
+  section.home h2{
+    font-size: 20px;
+  }
+
+  .home-page1, .home-page2{
+    padding: 100px;
+  }
+}
+
+@media screen and (max-width:830px) {
+  section.home h1{
+    font-size: 45px;
+  }
+
+  section.home h2{
+    font-size: 19px;
+  }
+
+  .home-page1, .home-page2{
+    padding: 65px;
+  }
+}
+
+@media screen and (max-width:760px) {
+  .home-page1{
+    text-align: center;
+    display: block;
+  }
+
+  .illu{
+    width: 80%;
+  }
+
+  div.distance{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.container-fluid{
+    padding: 12px 30px;
+  }
+
+  section.home h1{
+    font-size: 40px;
+  }
+
+  section.home h2{
+    font-size: 18px;
+  }
+
+  .home-page1, .home-page2{
+    padding: 30px;
+  }
+
+  .home-page2 br{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-page2 .ill{
+    padding: 0 10px;
   }
 }
