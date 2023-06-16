@@ -1,6 +1,7 @@
 // Memilih elemen-elemen HTML
 const registerForm = document.getElementById('register-form');
 const popupOkBtn = document.getElementById('popup-ok-btn');
+const errorMessage  = document.getElementById('error-message');
 
 // Menambahkan event listener ke form registrasi
 registerForm.addEventListener('submit', handleRegistration);
@@ -11,19 +12,39 @@ function handleRegistration(event) {
 
   // Ambil data dari form
   const username = document.getElementById('username').value;
-  const nama = document.getElementById('nama').value;
+  const name = document.getElementById('nama').value;
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
   // Lakukan validasi atau proses registrasi sesuai kebutuhan
+  var users = JSON.parse(localStorage.getItem('users')) || [];
 
-  // Menampilkan pop-up registrasi berhasil
+  var foundUser = users.find(function(user) {
+    return user.username === username || user.email === email;
+  });
+
+  if (foundUser) {
+    // User dah ada
+    showErrorMessage('Username atau email-nya dah kepake ceunah, ganti deh mending');
+  } else {
+    // Register new user
+    var newUser = {
+      username: username,
+      password: password,
+      name: name,
+      email: email
+    };
+
+    users.push(newUser);
+    localStorage.setItem('users', JSON.stringify(users));
+  // Nampilin pop-up registrasi berhasil
   showRegisterSuccessPopup();
+  }
 }
 
-// Fungsi untuk menampilkan pop-up registrasi berhasil
+// Fungsi untuk nampilin pop-up registrasi berhasil
 function showRegisterSuccessPopup() {
-  // Membuat elemen pop-up register
+  // buat elemen pop-up register
   const registerSuccessPopup = document.createElement('div');
   registerSuccessPopup.id = 'register-success-popup';
   registerSuccessPopup.classList.add('popup-container');
@@ -41,21 +62,31 @@ function showRegisterSuccessPopup() {
   popupOkBtn.id = 'popup-ok-btn';
   popupOkBtn.textContent = 'OK';
 
-  // Menambahkan elemen-elemen ke dalam pop-up register
+  // nambahin elemen-elemen ke dalam pop-up register
   popupContent.appendChild(popupTitle);
   popupContent.appendChild(popupMessage);
   popupContent.appendChild(popupOkBtn);
   registerSuccessPopup.appendChild(popupContent);
 
-  // Menambahkan pop-up register ke dalam body
+  // nambahin pop-up register ke dalam body
   document.body.appendChild(registerSuccessPopup);
 
-  // Menambahkan event listener ke tombol "OK" pada pop-up
+  // nambahin event listener ke tombol "OK" pada pop-up
   popupOkBtn.addEventListener('click', redirectToLogin);
 }
 
-// Fungsi untuk mengarahkan pengguna ke halaman login
+document.addEventListener('DOMContentLoaded', function() {
+  var boxForm = document.querySelector('.box-form');
+  boxForm.style.opacity = '1';
+});
+
+// Fungsi buat pengguna otw ke halaman login
 function redirectToLogin() {
   window.location.href = 'signin.html';
 }
 
+ // Nampilin gagal regis
+ function showErrorMessage(message) {
+  errorMessage.textContent = message;
+  errorMessage.style.display = 'block';
+}
