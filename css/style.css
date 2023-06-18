@@ -22,7 +22,19 @@ a{
   color: #222223;
 }
 
-h3{
+section h1{
+  font-size: 70px;
+}
+
+section h2{
+  font-size: 43px;
+}
+
+section h3{
+  font-size: 22px;
+}
+
+h4{
   font-size: 15px;
   margin-top: 10px;
 }
@@ -56,6 +68,10 @@ button{
 }
 
 .bold{
+  font-weight: 600;
+}
+
+.medium{
   font-weight: 500;
   letter-spacing: 0.4px;
 }
@@ -120,6 +136,10 @@ button{
   border: none;
 }
 
+.border-05{
+  border: 1.5px solid #579BB1;
+}
+
 .pointer{
   cursor: pointer;
 }
@@ -144,20 +164,24 @@ button{
   grid-template-columns: 2fr 1fr;
 }
 
+.gtc-3fr-v2{
+  grid-template-columns: 1fr 2fr;
+}
+
 .display-flex{
   display: flex;
 }
 
-.flex-column{
-  flex-direction: column;
+.align-center{
+  align-items: center;
 }
 
 .justify-center{
   justify-content: center;
 }
 
-.align-center{
-  align-items: center;
+.justify-right{
+  justify-content: right;
 }
 
 .full-width{
@@ -176,6 +200,18 @@ button{
   width: 50%;
 }
 
+.width-130{
+  width: 130px;
+}
+
+.width-80{
+  width: 80px;
+}
+
+.width-40{
+  width: 40px;
+}
+
 .width-15{
   width: 15px;
 }
@@ -184,42 +220,46 @@ button{
   height: 100%;
 }
 
-.margin-10{
-  margin: 10px;
+.height-20{
+  height: 20px;
 }
 
-.margin-top-25{
-  margin-top: 25px;
+.margin-20-0-30-0{
+  margin: 20px 0 30px 0;
 }
 
-.margin-left-10{
-  margin-left: 10px;
+.margin-top-40{
+  margin-top: 40px;
+}
+
+.margin-right-10{
+  margin-right: 10px;
+}
+
+.margin-right-20{
+  margin-right: 20px;
 }
 
 .margin-bottom-15{
   margin-bottom: 15px;
 }
 
-.padding-50-175{
-  padding: 50px 175px;
-}
-
 .padding-50{
   padding: 50px;
+}
+
+.padding-0-175{
+  padding: 0 175px;
+}
+
+.padding-50-175{
+  padding: 50px 175px;
 }
 
 .box-form{
   box-shadow: 1px 1px 45px rgba(0, 0, 0, 0.1);
   padding: 30px 40px;
   border-radius: 20px;
-}
-
-.sign-ill{
-  width: 400px;
-}
-
-.sign-logo{
-  width: 80px;
 }
 
 .form-field:hover{
@@ -273,102 +313,97 @@ nav.navbar{
   font-size: 14px;
 }
 
-.width-130{
-  width: 130px;
-}
-
-.width-40{
-  width: 40px;
-}
-
-.margin-right-10{
-  margin-right: 10px;
-}
-
-.margin-right-20{
-  margin-right: 20px;
-}
-
 div.container-fluid{
   padding: 12px 50px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width:990px) {
+  .margin-bottom-12{
+    margin-bottom: 12px;
+  }
+}
+
 /* CSS SECTION */
 
-section.home h1{
-  font-size: 70px;
-  font-weight: 600;
-}
-
-section.home h2{
-  font-size: 22px;
-}
-
 .gradient1{
-  background: linear-gradient(to bottom, white, #ece8dd);
+  background: linear-gradient(to bottom, white, #f8f4ea);
 }
 
 .gradient2{
-  background: linear-gradient(to bottom, #ece8dd, white);
+  background: linear-gradient(to bottom, #f8f4ea, white);
 }
 
-.margin-20{
-  margin: 20px 0;
-}
-
-.padding-15{
-  padding: 0 20px;
-}
-
-.height-30{
-  height: 30px;
-}
-
-div.distance{
-  display: none;
+.illustration-right, .illustration-left{
+  margin-left: 50px;
 }
 
 @media screen and (max-width:1120px) {
-  section.home h1{
-    font-size: 50px;
+  section h1{
+    font-size: 58px;
   }
 
-  section.home h2{
+  section h2{
+    font-size: 40.5px;
+  }
+
+  section h3{
     font-size: 20px;
   }
 
-  .home-page1, .home-page2{
-    padding: 100px;
+  section p{
+    font-size: 15.5px;
   }
 }
 
-@media screen and (max-width:830px) {
-  section.home h1{
+@media screen and (max-width:930px) {
+  section h1{
     font-size: 45px;
   }
 
-  section.home h2{
+  section h2{
+    font-size: 38px;
+  }
+
+  section h3{
     font-size: 19px;
   }
 
-  .home-page1, .home-page2{
-    padding: 65px;
+  section p{
+    font-size: 15px;
+  }
+
+  .home-page2, .about-page1, .about-page2a, .about-page2b{
+    padding: 0;
+    padding: 50px 165px;
   }
 }
 
-@media screen and (max-width:760px) {
-  .home-page1{
+@media screen and (max-width:745px) {
+  .home-page1, .about-page1 div, .about-page2a, .about-page2b{
     text-align: center;
     display: block;
   }
-
-  .illu{
-    width: 80%;
+  
+  .about-page2a{
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  div.distance{
-    display: block;
+  .illustration-right, .illustration-left{
+    margin-left: 0;
+  }
+
+  .home-page1 .illustration-right img, .illustration-left, .illust{
+    margin-top: 40px;
+  }
+
+  .home-page2, .about-page1, .about-page2a, .about-page2b{
+    padding: 50px 75px;
+  }
+
+  .illustration .distance{
+    display: none;
   }
 }
 
@@ -377,26 +412,28 @@ div.distance{
     padding: 12px 30px;
   }
 
-  section.home h1{
+  .home-page1, .home-page2, .about-page1, .about-page2a, .about-page2b{
+    padding: 30px;
+  }
+
+  section h1{
     font-size: 40px;
   }
 
-  section.home h2{
+  section h2{
+    font-size: 36px;
+  }
+
+  section h3{
     font-size: 18px;
   }
 
-  .home-page1, .home-page2{
-    padding: 30px;
+  section p{
+    font-size: 14px;
   }
 
   .home-page2 br{
     display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .home-page2 .ill{
-    padding: 0 10px;
   }
 }
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planify | Sign In</title>
+    <title>Planify | Home</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +15,14 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand nav-link active" aria-current="page" href="#"><img src="img/logo2.png" alt="logo-planify" class="width-130"></a>
+            <a class="navbar-brand nav-link active" aria-current="page" href="index.html"><img src="img/logo2.png" alt="logo-planify" class="width-130"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item margin-right-10">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item margin-right-10">
                         <a class="nav-link" href="#">Contact Us</a>
@@ -32,17 +32,17 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav d-flex">
-                    <li id="login-nok" class="nav-item margin-right-10">
+                    <li id="login-nok" class="nav-item margin-right-10 margin-bottom-12">
                         <a class="nav-link" href="signin.html">Sign In</a>
                     </li>
-                    <li id="login-ok" class="nav-item margin-right-10">
-                        <button id="logoutButton">Log Out</button>
+                    <li id="login-ok" class="nav-item margin-right-20 margin-bottom-12">
+                        <a class="" href="#"><img src="" alt="" class="avatar-img width-40" style="margin: 0; padding: 0;"></a>
                     </li>
-                    <li id="login-ok" class="nav-item margin-right-20">
-                        <a class="" href="#"><img class="avatar-image" src="" alt="" class="width-40"></a>
+                    <li id="login-okk" class="nav-item margin-right-20 margin-bottom-12">
+                        <button class="radius white-bg border-05 tosca medium pointer" id="logoutButton" type="button">Log Out</button>
                     </li>
-                    <li class="nav-item">
-                        <button class="radius tosca-bg white bold pointer" type="button">To-Do List</button>
+                    <li class="nav-item margin-bottom-12">
+                        <button class="radius tosca-bg white medium pointer" type="button">To-Do List</button>
                     </li>
                 </ul>
             </div>
@@ -51,24 +51,26 @@
 
     <section class="home">
         <div class="home-page1 gradient1 padding-50 display-grid gtc-3fr align-center">
-            <div class="welcome full-width">
-                <h2 class="display-inline">Hello<label id="userContainer"></label>! Welcome to </h2><h2 class="display-inline tosca">Planify</h2><h2 class="display-inline">!</h2>
-                <h1 class="margin-20">Elevate Productivity, Dominate the Day!</h1>
-                <button class="radius tosca-bg white bold pointer padding-15" type="button">Start Getting Things Done!</button>
+            <div class="welcome">
+                <h3 class="display-inline">Hello<label id="userContainer"></label>! Welcome to </h3><h3 class="display-inline tosca">Planify</h3><h3 class="display-inline">!</h3>
+                <h1 class="bold margin-20-0-30-0">Elevate Productivity, Dominate the Day!</h1>
+                <button class="radius tosca-bg white medium pointer" type="button">Start Getting Things Done!</button>
             </div>
-            <div class="distance height-30"></div>
-            <div class="illustration text-center full-width">
-                <img src="img/home-ill.png" alt="to-do list" class="illu almost-full-width">
+            <div class="illustration-right">
+                <div class="distance height-20"></div>
+                <img src="img/page1-ill.png" alt="to-do list" class="full-width">
+                <div class="distance height-20"></div>
             </div>
         </div>
-        <div class="home-page2 gradient2 text-center padding-50-175">
-            <h1>Unify Your Tasks, Projects, & Knowledge.</h1>
-            <div class="margin-20">
-                <h2 class="display-inline tosca">Planify</h2><h2 class="display-inline">, Where Efficient Task Management<br> Fuels Productivity and Success!</h2>
+        <div class="home-page2 gradient2 padding-50-175 text-center">
+            <h1 class="bold">Unify Your Tasks, Projects, & Knowledge.</h1>
+            <div class="margin-20-0-30-0">
+                <h3 class="display-inline tosca">Planify</h3><h3 class="display-inline">, Where Efficient Task Management<br> Fuels Productivity and Success!</h3>
             </div>
-            <button class="margin-10 radius tosca-bg white bold pointer padding-15" type="button">Try Planify Now!</button>
-            
-            <div class="ill margin-top-25"><img src="img/page2-ill.png" alt="" class="full-width"></div>
+            <button class="radius tosca-bg white medium pointer" type="button">Try Planify Now!</button>
+            <div class="margin-top-40">
+                <img src="img/page2-ill.png" alt="three illustration" class="full-width">
+            </div>
         </div>
     </section>
 
