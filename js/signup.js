@@ -90,3 +90,18 @@ function redirectToLogin() {
   errorMessage.textContent = message;
   errorMessage.style.display = 'block';
 }
+
+const passwordInput = document.getElementById("password");
+  const passwordToggle = document.getElementById("password-toggle");
+  
+  passwordToggle.addEventListener("click", togglePasswordVisibility);
+  
+  function togglePasswordVisibility() {
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      passwordToggle.innerHTML = '<img src="icon/hide.png" alt="" class="width-15">';
+    } else {
+      passwordInput.type = "password";
+      passwordToggle.innerHTML = '<img src="icon/view.png" alt="" class="width-15">';
+    }
+  }

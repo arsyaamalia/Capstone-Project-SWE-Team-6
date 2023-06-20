@@ -44,7 +44,7 @@ h4{
   margin-top: 10px;
 }
 
-input, button{
+input, button, textarea, section input, section button, section textarea{
   color: #222223;
   font-size: 13px;
   padding: 8px 10px;
@@ -56,7 +56,7 @@ input:-webkit-autofill {
   background-color: #f5f5f5;
 }
 
-button{
+button, section button{
   height: 40px;
 }
 
@@ -125,7 +125,7 @@ button{
 }
 
 .grey-bg{
-  background-color: #e8e8e8;
+  background-color: #f0f0f0;
 }
 
 .white-bg{
@@ -241,6 +241,10 @@ button{
   height: 20px;
 }
 
+.height-23{
+  height: 23px;
+}
+
 .margin-20-0-30-0{
   margin: 20px 0 30px 0;
 }
@@ -265,6 +269,18 @@ button{
   padding: 50px;
 }
 
+.padding-30-40{
+  padding: 30px 40px;
+}
+
+.padding-35-40-40-40{
+  padding: 35px 40px 40px 40px;
+}
+
+.padding-0-175-50-175{
+  padding: 0 175px 50px 175px;
+}
+
 .padding-0-175{
   padding: 0 175px;
 }
@@ -275,8 +291,11 @@ button{
 
 .box-form{
   box-shadow: 0px 0px 21px 5px rgba(57, 57, 57, 0.1);
-  padding: 30px 40px;
   border-radius: 20px;
+}
+
+.box-shadow{
+  box-shadow: 0px 0px 21px 1px rgba(57, 57, 57, 0.1);
 }
 
 .form-field:hover{
@@ -285,7 +304,8 @@ button{
 }
 
 .no-bg:focus {
-  background-color: #e5e5e5;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(200px);
   outline: none;
   border-radius: 10px;
 }
@@ -522,63 +542,3 @@ div.container-fluid{
   }
 }
 
-/* ini ngaco parah hapus aja gpp kalo mau benerin wkwkkwk */
-
-.Rectangle-5 {
-  width: 90%;
-  height: 70%;
-  flex-grow: 0;
-  margin: 40px 81px 33.6px;
-  padding: 22.3px 0 27.1px 14.8px;
-  border-radius: 20px;
-  background-color: rgba(87, 155, 177, 0.2);
-}
-
-.Rectangle-6 {
-  width: 600px;
-  height: 50px;
-  flex-grow: 0;
-  margin: 51.2px 49.4px 15px 41.4px;
-  padding: 13.5px 469.9px 6.5px 19.1px;
-  border-radius: 5px;
-  border: solid 1px #e4e4e4;
-  background-color: #fff;
-}
-
-.Rectangle-7 {
-  width: 600px;
-  height: 50px;
-  flex-grow: 0;
-  margin: 15px 49.4px 16.8px 41.4px;
-  padding: 13.5px 439.9px 6.5px 19.1px;
-  border-radius: 5px;
-  border: solid 1px #e4e4e4;
-  background-color: #fff;
-}
-
-.Rectangle-8 {
-  width: 600px;
-  height: 194px;
-  flex-grow: 0;
-  margin: 16.8px 49.4px 42px 41.4px;
-  padding: 13.1px 358.9px 151.8px 19.1px;
-  border-radius: 5px;
-  border: solid 1px #e4e4e4;
-  background-color: #fff;
-}
-
-.Frame-16 {
-  width: 251px;
-  height: 50px;
-  flex-grow: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
-  margin: 42px 224.4px 91.2px 215.4px;
-  padding: 10px 100px;
-  border-radius: 46px;
-  background-color: #579bb1;
-  align-items: center;
-}

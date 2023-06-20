@@ -41,3 +41,8 @@ function showLoggedOutView() {
     loginOkElement.style.display = 'none';
     loginNokElement.style.display = 'block';
 }
+
+
+function disableResize(event) {
+    event.target.style.resize = "none";
+}  
