@@ -49,3 +49,18 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
       window.location.href = 'index.html';
     }, 300); 
   }
+
+  const passwordInput = document.getElementById("password");
+  const passwordToggle = document.getElementById("password-toggle");
+  
+  passwordToggle.addEventListener("click", togglePasswordVisibility);
+  
+  function togglePasswordVisibility() {
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      passwordToggle.innerHTML = '<img src="icon/hide.png" alt="" class="width-15">';
+    } else {
+      passwordInput.type = "password";
+      passwordToggle.innerHTML = '<img src="icon/view.png" alt="" class="width-15">';
+    }
+  }

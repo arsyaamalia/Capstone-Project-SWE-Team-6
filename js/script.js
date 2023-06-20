@@ -15,7 +15,7 @@ document.getElementById('logoutButton').addEventListener('click', function() {
     localStorage.removeItem('loggedInUser');
     showLoggedOutView();
     location.reload();
-  });
+});
 
 // Function to show view for logged in user
 function showLoggedInView(user) {
@@ -29,10 +29,10 @@ function showLoggedInView(user) {
     userContainer.textContent = ', ' + user.name;
     imgElement.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1200px-Default_pfp.svg.png';
     imgElement.className = 'avatar-img width-40';
-  }
+}
   
-  // Function to show view for logged out user
-  function showLoggedOutView() {
+// Function to show view for logged out user
+function showLoggedOutView() {
     var loginOkkElement = document.getElementById('login-okk');
     var loginOkElement = document.getElementById('login-ok');
     var loginNokElement = document.getElementById('login-nok');
@@ -40,4 +40,4 @@ function showLoggedInView(user) {
     loginOkkElement.style.display = 'none';
     loginOkElement.style.display = 'none';
     loginNokElement.style.display = 'block';
-  }
+}

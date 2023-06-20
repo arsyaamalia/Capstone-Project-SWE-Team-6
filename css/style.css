@@ -1,3 +1,8 @@
+#background{
+  background-image: url('/img/Background.png');
+  background-size: 100%;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -73,6 +78,9 @@ button{
 
 .medium{
   font-weight: 500;
+}
+
+.font-space{
   letter-spacing: 0.4px;
 }
 
@@ -117,15 +125,24 @@ button{
 }
 
 .grey-bg{
-  background-color: #f0f0f0;
+  background-color: #e8e8e8;
 }
 
 .white-bg{
   background-color: white;
 }
 
+.white-tr-bg{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(200px);
+}
+
 .no-bg{
   background-color: transparent;
+}
+
+.navbar-transparent {
+  background-color: transparent !important;
 }
 
 .radius{
@@ -257,7 +274,7 @@ button{
 }
 
 .box-form{
-  box-shadow: 1px 1px 45px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 21px 5px rgba(57, 57, 57, 0.1);
   padding: 30px 40px;
   border-radius: 20px;
 }
@@ -268,7 +285,7 @@ button{
 }
 
 .no-bg:focus {
-  background-color: #f5f5f5;
+  background-color: #e5e5e5;
   outline: none;
   border-radius: 10px;
 }
@@ -315,7 +332,7 @@ nav.navbar{
 
 div.container-fluid{
   padding: 12px 50px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); */
 }
 
 @media screen and (max-width:990px) {
