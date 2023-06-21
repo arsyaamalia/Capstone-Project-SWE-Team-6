@@ -1,5 +1,5 @@
 #background{
-  background-image: url('/img/Background.png');
+  background-image: url('/img/Background2.png');
   background-size: 100%;
 }
 
@@ -12,6 +12,11 @@
 }
 
 body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #222223;
   font-size: 13px;
 }
 
@@ -39,12 +44,22 @@ section h3{
   font-size: 22px;
 }
 
-h4{
+section h4{
+  font-size: 18px;
+  margin: 0;
+}
+
+section p{
+  font-size: 16px;
+  margin: 0;
+}
+
+h5{
   font-size: 15px;
   margin-top: 10px;
 }
 
-input, button, textarea, section input, section button, section textarea{
+input, button, textarea{
   color: #222223;
   font-size: 13px;
   padding: 8px 10px;
@@ -58,6 +73,10 @@ input:-webkit-autofill {
 
 button, section button{
   height: 40px;
+}
+
+button:hover, section button:hover{
+  background-color: #77b3c7;
 }
 
 .text-center{
@@ -82,6 +101,10 @@ button, section button{
 
 .font-space{
   letter-spacing: 0.4px;
+}
+
+.semi-black{
+  color: #3a3a3a;
 }
 
 .tosca{
@@ -185,8 +208,17 @@ button, section button{
   grid-template-columns: 1fr 2fr;
 }
 
+.gtc3fr{
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  grid-gap: 15px;
+}
+
 .display-flex{
   display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
 }
 
 .align-center{
@@ -269,16 +301,12 @@ button, section button{
   padding: 50px;
 }
 
+.padding-15{
+  padding: 15px;
+}
+
 .padding-30-40{
   padding: 30px 40px;
-}
-
-.padding-35-40-40-40{
-  padding: 35px 40px 40px 40px;
-}
-
-.padding-0-175-50-175{
-  padding: 0 175px 50px 175px;
 }
 
 .padding-0-175{
@@ -294,20 +322,17 @@ button, section button{
   border-radius: 20px;
 }
 
-.box-shadow{
-  box-shadow: 0px 0px 21px 1px rgba(57, 57, 57, 0.1);
-}
-
 .form-field:hover{
-  background-color: white;
-  border: 1.5px solid #ccc ;
+  border: 1.5px solid #ccc;
 }
 
-.no-bg:focus {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(200px);
+.no-bg:focus{
   outline: none;
   border-radius: 10px;
+}
+
+.border-form{
+  border: 1.5px solid #eaeaea;
 }
 
 .checkbox{
@@ -542,3 +567,67 @@ div.container-fluid{
   }
 }
 
+/* CSS OUR TEAM */
+
+.cards{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 20px 0;
+}
+
+.overlay, .overlays{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 20px 20px 0 20px;
+}
+
+.overlay::before, .overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  height: 20px;
+  width: 20px;
+  background-color: #579BB1;
+}
+
+.overlays::before, .overlays::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  height: 20px;
+  width: 20px;
+  background-color: #e1d7c6;
+}
+
+.overlay::after, .overlays::after{
+  border-radius: 0 20px 0 0;
+  background-color: #fff;
+}
+
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.card-image .card-img{
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #579BB1;
+}
+
+.card-image .cards-img{
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #e1d7c6;
+}
