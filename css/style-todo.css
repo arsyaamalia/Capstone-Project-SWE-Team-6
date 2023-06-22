@@ -310,6 +310,7 @@ section{
 
   #items > form > div > div > div > div {
     flex-direction: row-reverse;
+    text-align: left;
   }
 
   .itm-data > textarea{
