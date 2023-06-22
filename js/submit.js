@@ -3,6 +3,11 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   
     // Show the pop-up
     showPopup();
+
+    // Hapus isian
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
   });
   
   function showPopup() {

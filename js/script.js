@@ -14,11 +14,45 @@ document.getElementById('logoutButton').addEventListener('click', function() {
     // Remove logged in user from Local Storage
     localStorage.removeItem('loggedInUser');
     showLoggedOutView();
-    location.reload();
+    window.location.href = 'index.html';
+});
+
+// todo button
+document.getElementById('todoID').addEventListener('click', function() {
+    if (loggedInUser) {
+        // User is logged in
+        window.location.href = 'todo.html';
+    
+    } else {
+        window.location.href = 'signin.html';
+    }
+});
+
+// start button
+document.getElementById('startID').addEventListener('click', function() {
+    if (loggedInUser) {
+        // User is logged in
+        window.location.href = 'todo.html';
+    
+    } else {
+        window.location.href = 'signin.html';
+    }
+});
+
+// try button
+document.getElementById('tryID').addEventListener('click', function() {
+    if (loggedInUser) {
+        // User is logged in
+        window.location.href = 'todo.html';
+    
+    } else {
+        window.location.href = 'signin.html';
+    }
 });
 
 // Function to show view for logged in user
 function showLoggedInView(user) {
+    var currentPage = window.location.pathname.split('/').pop();
     var loginOkElement = document.getElementById('login-ok');
     var loginNokElement = document.getElementById('login-nok');
     var userContainer = document.getElementById('userContainer');
@@ -26,9 +60,12 @@ function showLoggedInView(user) {
   
     loginOkElement.style.display = 'block';
     loginNokElement.style.display = 'none';
-    userContainer.textContent = ', ' + user.name;
     imgElement.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1200px-Default_pfp.svg.png';
     imgElement.className = 'avatar-img width-40';
+
+    if (currentPage === 'index.html') {
+        userContainer.textContent = ', ' + user.name;
+      }
 }
   
 // Function to show view for logged out user
