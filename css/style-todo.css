@@ -1,81 +1,199 @@
-/* style to do list  */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Nunito', sans-serif;
+#background{
+  background-image: url('/img/Background2.png');
+  background-size: 100%;
 }
 
-/* ::-webkit-scrollbar {
-    width: 3px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #222223;
 }
 
-::-webkit-scrollbar-track {
-    background: #f9f6f6;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #222223;
+  font-size: 13px;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #f7755d;
+.nav-item button{
+  padding: 8px 10px;
+  border: none;
+  transition: 1s;
+  height: 40px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #fca36f;
-} */
+.nav-item button:hover{
+  background-color: #77b3c7;
+}
 
-body {
-    background-color: #a15d4f;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+section h2{
+  font-size: 43px;
+}
+
+section h3{
+  font-size: 22px;
+}
+
+section h4{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.width-40{
+  width: 40px;
 }
 
 .width-130{
   width: 130px;
 }
 
-#app {
-    background-color: #f9f6f6;
-    width: 20rem;
-    height: 36rem;
-    border-radius: 25px;
-    padding: 1.5rem 0.75rem 1.5rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    box-shadow: 0px 10px 40px 10px rgba(0, 0, 0, 0.2);
+.margin-right-10{
+  margin-right: 10px;
+}
+
+.margin-right-20{
+  margin-right: 20px;
+}
+
+.radius{
+  border-radius: 10px;
+}
+
+.border-05{
+  border: 1.5px solid #579BB1;
+}
+
+.tosca{
+  color: #579BB1;
+}
+
+.white{
+  color: white;
+}
+
+.tosca-bg{
+  background-color: #579BB1;
+}
+
+.white-tr-bg{
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(200px);
+}
+
+.medium{
+  font-weight: 500;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.font-space{
+  letter-spacing: 0.4px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.full-height{
+  height: 100%;
+}
+
+.box-form{
+  box-shadow: 0px 0px 21px 5px rgba(57, 57, 57, 0.1);
+  border-radius: 20px;
+}
+
+.padding-50{
+  padding: 50px;
+}
+
+.margin-20-0-30-0{
+  margin: 20px 0 30px 0;
+}
+
+/* CSS NAVBAR */
+
+.navbar-transparent {
+  background-color: transparent !important;
+}
+
+nav.navbar{
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+div.container-fluid{
+  padding: 12px 50px;
+  /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); */
+}
+
+@media screen and (max-width:990px) {
+  .margin-bottom-12{
+    margin-bottom: 12px;
+  }
+}
+
+/* CSS SECTION */
+
+section{
+  margin: 0;
+  padding: 50px 175px 0 175px;
+}
+
+.display-block{
+    display: block;
+}
+
+.display-grid{
+  display: grid;
+}
+
+.gtc-2fr{
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  grid-gap: 50px;
 }
 
 #items {
     overflow-y: auto;
     overflow-x: hidden;
-    padding-right: 0.75rem;
 }
 
 #items textarea {
     border: none;
-    background-color: #f9f6f6;
+    background-color: transparent;
     outline: none;
     resize: none;
     height: 2rem;
     overflow: hidden;
 }
 
-#items > form > div > div {
+#items > form > div > div > div > div {
     border-bottom: 1px solid #e2dfe0;
     display: flex;
     padding: 1rem 0;
     align-items: center;
 }
 
-#items > form > div > div > span {
+#items > form > div > div > div > div > span {
     cursor: pointer;
 }
 
 
-#items > form > div > div:nth-child(1) {
-    border-top: 1px sold #e2dfe0;
+#items > form > div > div > div > div:nth-child(1) {
+    border-top: 1px solid #e2dfe0;
 }
 
 .itm-data {
@@ -85,21 +203,18 @@ body {
 }
 
 .itm-data > textarea:nth-child(1) {
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .itm-data > textarea:nth-child(2) {
     color: #7e7e7e;
-    font-size: 0.9rem;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 #to-do {
     width: 100%;
-}
-
-#items > form > h1 {
-    margin: 1.2rem 0 0.8rem 0;
 }
 
 #done {
@@ -110,19 +225,88 @@ body {
     width: 70%;
     display: flex;
     margin: 2rem auto;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .up-to-date-txt {
-    color: #f7755d;
+    color: #579BB1;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 600px) {
-    #app {
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
-    }
-} 
+@media screen and (max-width:1120px) {
+  section h2{
+    font-size: 40.5px;
+  }
+
+  section h3{
+    font-size: 20px;
+  }
+
+  section{
+    padding: 0;
+    padding: 50px 165px 0 165px;
+  }
+}
+
+@media screen and (max-width:930px) {
+  section h2{
+    font-size: 38px;
+  }
+
+  section h3{
+    font-size: 19px;
+  }
+
+  .itm-data > textarea:nth-child(1) {
+    font-size: 15.5px;
+    font-weight: 500;
+  }
+
+  .itm-data > textarea:nth-child(2) {
+    color: #7e7e7e;
+    font-size: 13.5px;
+    font-weight: 400;
+  }
+
+  section{
+    padding: 0;
+    padding: 50px 75px 0 75px;
+  }
+}
+
+@media screen and (max-width:745px) {
+  section{
+    text-align: center;
+    padding: 50px 50px 0 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.container-fluid{
+    padding: 12px 30px;
+  }
+
+  section, div#app{
+    padding: 30px 30px 0 30px;
+  }
+
+  section h2{
+    font-size: 36px;
+  }
+
+  section h3{
+    font-size: 18px;
+  }
+
+  .itm-data > textarea:nth-child(1) {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .itm-data > textarea:nth-child(2) {
+    color: #7e7e7e;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}

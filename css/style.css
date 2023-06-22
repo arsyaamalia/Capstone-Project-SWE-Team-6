@@ -75,8 +75,13 @@ button, section button{
   height: 40px;
 }
 
-button:hover, section button:hover{
+section button:hover{
   background-color: #77b3c7;
+}
+
+.no-margin-no-padding{
+  margin: 0;
+  padding: 0;
 }
 
 .text-center{
@@ -416,6 +421,10 @@ div.container-fluid{
   section p{
     font-size: 15.5px;
   }
+
+  .contact{
+    padding: 50px 165px;
+  }
 }
 
 @media screen and (max-width:930px) {
@@ -435,9 +444,13 @@ div.container-fluid{
     font-size: 15px;
   }
 
-  .home-page2, .about-page1, .about-page2a, .about-page2b, .contact{
+  .home-page2, .about-page1, .about-page2a, .about-page2b{
     padding: 0;
     padding: 50px 165px;
+  }
+
+  .contact{
+    padding: 50px 75px;
   }
 }
 
@@ -460,8 +473,12 @@ div.container-fluid{
     margin-top: 40px;
   }
 
-  .home-page2, .about-page1, .about-page2a, .about-page2b, .contact{
+  .home-page2, .about-page1, .about-page2a, .about-page2b{
     padding: 50px 75px;
+  }
+
+  .contact{
+    padding: 50px;
   }
 
   .illustration .distance{
@@ -474,7 +491,7 @@ div.container-fluid{
     padding: 12px 30px;
   }
 
-  .home-page1, .home-page2, .about-page1, .about-page2a, .about-page2b, .contact{
+  .home-page1, .home-page2, .about-page1, .about-page2a, .about-page2b, .contact, .slide-container, .contact-container{
     padding: 30px;
   }
 

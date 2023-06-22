@@ -219,7 +219,7 @@ function renderCompletedImg() {
     const upToDateImg = document.createElement("img");
     const upToDateText = document.createElement("h3");
 
-    upToDateImg.src = "./images/upToDate.svg";
+    upToDateImg.src = "./img/done.png";
     upToDateImg.classList.add("up-to-date-img");
 
     upToDateText.innerText =
