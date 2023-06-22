@@ -1,6 +1,7 @@
 body#background{
-  background-image: url('/img/Background2.png');
+  background-image: url('file:///C:/Users/Arsya%20Amalia/OneDrive/Documents/KULIAH%20SMS6/REVOU/Capstone-Project-SWE-Team-6/img/Background2.png');
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 *{
