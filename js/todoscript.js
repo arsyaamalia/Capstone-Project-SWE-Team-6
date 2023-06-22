@@ -198,9 +198,10 @@ function removeItem(e) {
 
 // Checks/Unchecks an item
 function checkItem(e) {
+
     let isCompleted = list.to_do_list[e.target.id].completed;
     list.to_do_list[e.target.id].completed = !isCompleted;
-
+    
     anime({
         targets: e.target.parentElement,
         duration: 500,

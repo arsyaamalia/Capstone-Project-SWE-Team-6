@@ -1,4 +1,4 @@
-#background{
+body#background{
   background-image: url('/img/Background2.png');
   background-size: 100%;
 }
@@ -162,7 +162,6 @@ section button:hover{
 
 .white-tr-bg{
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(200px);
 }
 
 .no-bg{
