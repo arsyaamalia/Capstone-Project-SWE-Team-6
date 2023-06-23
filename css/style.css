@@ -322,6 +322,10 @@ section button:hover{
   padding: 50px 175px;
 }
 
+.padding-50-0-175{
+  padding: 0px 175px 50px 175px;
+}
+
 .box-form{
   box-shadow: 0px 0px 21px 5px rgba(57, 57, 57, 0.1);
   border-radius: 20px;
