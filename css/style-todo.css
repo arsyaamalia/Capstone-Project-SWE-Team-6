@@ -1,5 +1,5 @@
 body#background{
-  background-image: url('file:///C:/Users/Arsya%20Amalia/OneDrive/Documents/KULIAH%20SMS6/REVOU/Capstone-Project-SWE-Team-6/img/Background2.png');
+  background-image: url('https://i.postimg.cc/nrCYLH28/Background2.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -176,11 +176,6 @@ section{
   grid-gap: 50px;
 }
 
-#items {
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
 #items textarea {
     border: none;
     background-color: transparent;
@@ -312,6 +307,7 @@ section{
   #items > form > div > div > div > div {
     flex-direction: row-reverse;
     text-align: left;
+    padding-left: 2px;
   }
 
   .itm-data > textarea{
@@ -327,5 +323,15 @@ section{
     color: #7e7e7e;
     font-size: 13px;
     font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  #items > form > div > div > div > div {
+    flex-direction: column-reverse;
+  }
+
+  .itm-data > textarea:nth-child(1){
+    margin-top: 15px;
   }
 }
