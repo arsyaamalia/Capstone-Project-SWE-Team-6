@@ -4,66 +4,12 @@ const toDo = document.querySelector("#to-do");
 const done = document.querySelector("#done");
 const form = document.querySelector("#form");
 
-// const defaultList = {
-//     "to_do_list": [
-//         {
-//             "title": "🛒 Buy groceries",
-//             "description": "Milk, bread, eggs, cheese, fruits and vegetables.",
-//             "completed": false
-//         },
-//         {
-//             "title": "📝 Finish project",
-//             "description": "Complete the final report and submit it by Friday.",
-//             "completed": true
-//         },
-//         {
-//             "title": "🧼 Clean the house",
-//             "description": "Vacuum, dust, and clean the bathrooms.",
-//             "completed": false
-//         },
-//         {
-//             "title": "💰 Pay bills",
-//             "description": "Electricity, water, and internet bills.",
-//             "completed": false
-//         },
-//         {
-//             "title": "📞 Call mom",
-//             "description": "Check in and see how she's doing.",
-//             "completed": true
-//         },
-//         {
-//             "title": "📅 Schedule appointment",
-//             "description": "Make an appointment with the dentist.",
-//             "completed": true
-//         },
-//         {
-//             "title": "🏃‍♂️ Go for a run",
-//             "description": "Jog for 30 minutes.",
-//             "completed": true
-//         },
-//         {
-//             "title": "📖 Read a book",
-//             "description": "Finish reading 'The Great Gatsby'.",
-//             "completed": true
-//         },
-//         {
-//             "title": "✍️ Write a blog post",
-//             "description": "Come up with a topic and write a 500-word blog post.",
-//             "completed": true
-//         },
-//         {
-//             "title": "🧹 Organize closet",
-//             "description": "Sort clothes by category and donate items no longer needed.",
-//             "completed": true
-//         }
-//     ]
-// }
-
-// // This is in case our local storage is empty
-// if (!list) {
-//     localStorage.setItem('list', JSON.stringify(defaultList));
-//     list = JSON.parse(localStorage.getItem('list'));
-// }
+// This is in case our local storage is empty
+if (!list) {
+    list = {
+        to_do_list: []
+    };
+}
 
 // Handles the list of items
 function getListData() {
