@@ -1,5 +1,5 @@
 body#background{
-  background-image: url('https://i.postimg.cc/nrCYLH28/Background2.png');
+  background-image: url('../img/Background2.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }
